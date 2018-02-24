@@ -11,41 +11,46 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="site-header">
-            <div>
-                <a href="/">
-                    <img src="images/logo.png" alt="elo szczecin">
+        <div class="container">
+            <header class="site-header">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="elo szczecin" class="site-header__logo">
                 </a>
-                <p>Elo Szczecin</p>
-            </div>
+                <div class="site-header__title">
+                    <p class="title__item">Elo</p>
+                    <p class="title__item">Szczecin</p>
+                </div>
+            </header>
             <nav class="site-navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Offer</a></li>
-                    <li><a href="#">Partnership</a></li>
-                    <li><a href="#">Contact us</a></li>
+                <ul class="site-navbar__list">
+                    <li class="site-navbar__item"><a href="#" class="site-navbar__link">Home</a></li>
+                    <li class="site-navbar__item"><a href="#" class="site-navbar__link">Offer</a></li>
+                    <li class="site-navbar__item"><a href="#" class="site-navbar__link">Partnership</a></li>
+                    <li class="site-navbar__item"><a href="#" class="site-navbar__link">Contact us</a></li>
                 </ul>
             </nav>
-        </header>
-        <main class="container">
+        </div>
+        <main class="main">
             <header>
-            <img src="images/band.png" alt="eloszczecin band">
-            <h1>EloSzczecin band</h1>
-            <h2>Say hello to the future.</h2>
+            <img src="images/band.png" alt="eloszczecin band" class="main__image">
+            <h1 class="main-header__title">EloSzczecin band.</h1>
+            <p class="main-header__desc">Say hello to the future.</p>
             </header>
-            <section>
-                <p>Lorem here</p>
+            <section class="main-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius ex bibendum ante euismod pharetra. Praesent sollicitudin tristique felis, eu rutrum lorem cursus vel. Nam sagittis porta sem, et volutpat ipsum maximus vel. In facilisis, eros eget euismod convallis, orci orci sollicitudin dolor, at vehicula lacus sem nec erat. In dignissim, elit in egestas porta, ex urna accumsan felis, id tempus diam nulla vel est. </p>
+                <p>
+                Etiam cursus at tortor a ornare. Quisque id eros eros. Mauris fringilla felis eget elit posuere sagittis. Nullam felis ante, laoreet a pharetra sed, tincidunt quis neque. Ut eget hendrerit dolor. 
+                </p>
             </section>
-            <footer>
-                <p>Read more</p>
+            <footer class="main-footer">
+                <a href="#" class="main-footer__link">Read more</a>
             </footer>
-            <p></p>
         </main>
         <footer class="site-footer">
             <small>&copy; 2018 EloSzczecin. All rights reserved.</small>
-            <ul>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>    
+            <ul class="site-footer__list">
+                <li class="site-footer__item"><a href="#" class="site-footer__link">Privacy policy</a></li>
+                <li class="site-footer__item"><a href="#" class="site-footer__link">Terms &amp; Conditions</a></li>    
             </ul>
         </footer>
     </body>

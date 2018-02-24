@@ -1,0 +1,154 @@
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    font-family: Open Sans, monospace;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header {
+    margin: 25px 40px 0;
+    height: 70px;
+    display: flex;
+}
+
+.site-header__title {
+    font-family: High Tower Text;
+    font-size: 35px;
+    line-height: 0.7;
+    letter-spacing: -2px;
+    color: #214f9b;
+    align-self: flex-end;
+}
+
+.title__item {
+    margin: 0;
+}
+
+.site-navbar {
+    display: flex;
+    margin-right: 30px;
+    border-bottom: 1px solid rgba(51, 51, 51, .25);
+}
+
+.site-navbar__list {
+    align-self: flex-end;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.site-navbar__item {
+    display: inline;
+    letter-spacing: -0.75px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 20px;
+    text-shadow: 1px 1px 2px rgba(51,51,51,0.25);
+}
+
+.site-navbar__link {
+    text-decoration: none;
+    color: #333;
+}
+
+.site-navbar__link:hover {
+    color: #214f9b;
+    text-shadow: 2px 2px 5px rgba(51,51,51,0.35);
+}
+
+.site-navbar__link:active {
+    color: #214f9b;
+    position: relative;
+    top: 1px;
+}
+
+.main {
+    width: 700px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.main-header__title, .main-header__desc {
+    text-align: left;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+
+.main-header__title {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 0.85);
+    margin-top: -40px;
+    
+}
+
+.main-header__desc {
+    font-size: 25px;
+    color: rgba(51, 51, 51, 0.75);
+    margin-bottom: 20px;
+}
+
+.main-desc {
+    text-align: left;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.9);
+}
+
+.main-footer {
+    text-align: left;
+    color: #214f9b;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+.main-footer__link {
+    text-decoration: none;
+    color: #214f9b;
+}
+
+.main-footer__link:hover {
+    color: #3661a9;
+}
+
+.main-footer__link:active {
+    position: relative;
+    top: 1px;
+}
+
+.site-footer {
+    width: 700px;
+    margin: 0 auto;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer__list {
+    margin: 0;    
+}
+
+.site-footer__item {
+    display: inline;
+    margin-left: 15px;
+}
+
+.site-footer__link {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.55);
+}
+
+
+.site-footer__link:hover {
+    color: rgba(51, 51, 51, 1);
+}
