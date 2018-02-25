@@ -1,15 +1,15 @@
 body {
-    background-image: url(images/background.jpg);
-    background-size: cover;
+    background: url(images/background.jpg) repeat;
     font-family: Open Sans, monospace;
-    width: 80%;
     max-width: 900px;
+    width: 90%;
     margin: 0 auto;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .site-header {
@@ -33,7 +33,7 @@ body {
 
 .site-navbar {
     display: flex;
-    margin-right: 30px;
+    margin: 20px 30px 0 0;
     border-bottom: 1px solid rgba(51, 51, 51, .25);
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 .main {
-    width: 700px;
+    width: 85%;
     margin: 25px auto;
     text-align: center;
 }
@@ -80,6 +80,10 @@ body {
     margin: 0;
     font-weight: 300;
     letter-spacing: -2px;
+}
+
+.main__image {
+    width: 80%;
 }
 
 .main-header__title {
@@ -126,21 +130,27 @@ body {
 }
 
 .site-footer {
-    width: 700px;
-    margin: 0 auto;
+    width: 85%;
+    margin: 25px auto;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-footer__copy {
+    margin-right: 15px;
 }
 
 .site-footer__list {
+    padding: 0;
     margin: 0;    
 }
 
 .site-footer__item {
-    display: inline;
-    margin-left: 15px;
-}
+    margin-top: -2px;
+    list-style-type: none;
+    }
 
 .site-footer__link {
     font-size: 12px;
@@ -151,4 +161,46 @@ body {
 
 .site-footer__link:hover {
     color: rgba(51, 51, 51, 1);
+}
+
+@media (max-width: 817px) {
+    .container {
+        justify-content: center;
+    }
+    .site-navbar {
+        border-bottom: none;
+        padding-right: 30px;
+        border-bottom: 1px solid rgba(51, 51, 51, .25);
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 567px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-navbar {
+        border-bottom: none;
+    }
+    .site-navbar__item {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid rgba(51, 51, 51, .25);
+        margin-bottom: 10px;
+    }
+    .main {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .site-footer {
+        width: 100%;
+    }
+    .main-header__title, .main-header__desc {
+        margin-top: 0;
+        text-align: center;
+    }
+    .main-desc, .main-footer {
+        text-align: center;
+    }
 }
