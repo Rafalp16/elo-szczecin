@@ -298,6 +298,73 @@ body {
     top: 2px;
 }
 
+.site-contact {
+    max-width: 25em;
+    margin: 0 auto;
+}
+
+.site-contact__header {
+    text-align: center;
+    margin: 1.5em 0 0.75em;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: -2.5px;
+    color: #214f9b;
+}
+
+.site-contact__form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px -7px black;
+}
+
+.form__input {
+    border: solid 1px #b3aca7;
+    border-bottom: none;
+    font-size: 0.85em;
+    padding: 25px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    color: #aca49c;
+    text-transform: uppercase;
+    }
+
+.form__input::placeholder {
+    color: #aca49c;
+}
+
+.form__input:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+}
+
+.form__input:hover::placeholder {
+    color: #e2dedb;
+}
+
+.form__textarea {
+    resize: none;
+    height: 5em;
+}
+
+.form__submit {
+    border: solid 1px #b3aca7;
+    font-size: 1em;
+    padding: 10px;
+    color: #214f9b;
+    background: transparent;
+    cursor: pointer;
+}
+
+.form__submit:hover {
+    background: #b3aca7;
+}
+
+.form__submit:active {
+    
+}
+
 @media (max-width: 37.5em) {
     .site-footer {
         width: 100%;
