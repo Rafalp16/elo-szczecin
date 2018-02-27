@@ -2,8 +2,7 @@
 @font-face { font-family: "Open Sans"; src: url('fonts/OpenSans-Regular.ttf'); }
 
 body {
-    background-color: rgba(221, 221, 221, 0.3);
-    background: url(images/background.jpg) repeat;
+    background: url(images/background.jpg) repeat rgba(221, 221, 221, 0.3);
 }
 
 .site-container {
@@ -297,10 +296,6 @@ body {
     background-color: #dfdfdf;
     position: relative;
     top: 2px;
-}
-
-.offer-join__button:focus {
-    outline: none;
 }
 
 @media (max-width: 37.5em) {
