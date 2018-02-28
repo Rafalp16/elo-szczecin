@@ -46,6 +46,11 @@ body {
     font-weight: 500;
 }
 
+.item__link {
+    text-decoration: none;
+    color: #214f9b;
+}
+
 .site-navbar {
     display: flex;
     margin: 1.25em 1.875em 0 0;
@@ -193,13 +198,13 @@ body {
 
 .offer-main__item {
     width: 30vw;
-    margin: 0 10px;
+    margin: 0 0.625em;
 }
 
 @media (max-width: 56.25em) {
     .offer-main__item {
         width: 33vw;
-        margin: 0 5px;
+        margin: 0 0.3125em;
     }
 }
 
@@ -222,6 +227,7 @@ body {
     font-weight: 500;
     color: rgba(51, 51, 51, 0.85);
     letter-spacing: -1.5px;
+    margin: 0.5em 0;
 }
 
 .item__desc {
@@ -275,7 +281,7 @@ body {
 
 .offer-join {
     text-align: center;
-    margin: 15px 0;
+    margin: 1em 0;
 }
 
 .offer-join__button {
@@ -315,23 +321,75 @@ body {
 
 .site-contact__form {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     box-shadow: 0 8px 16px -7px black;
 }
 
+@media (max-width: 37.5em) {
+    .site-contact__form {
+        flex-direction: column;
+    }
+}
+
+.form__label {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 1.5625em;
+    font-size: 0.85em;
+    border: solid 1px #b3aca7;
+    color: #898581;
+    border-right: none;
+    border-bottom: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width: 37.5em) {
+    .form__label {
+        border: solid 1px #b3aca7;
+        border-bottom: none;
+        padding: 0.25em 0;
+        width: 100%;
+    }
+}
+
+.form__label:hover {
+    color: #aca49c;
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: solid 2px #b3aca7;
+    border-right: none;
+    border-bottom: none;
+}
+
+@media (max-width: 37.5em) {
+    .form__label:hover {
+        border: solid 1px #b3aca7;
+        border-bottom: none;
+    }
+}
+
 .form__input {
+    box-sizing: border-box;
     border: solid 1px #b3aca7;
     border-bottom: none;
     font-size: 0.85em;
-    padding: 25px;
+    padding: 1.5625em 1em;
+    width: 75%;
     background: transparent;
-    transition: all 0.3s ease-in-out;
-    color: #aca49c;
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out, background 0.3s ease-in-out;
+    color: #898581;
     text-transform: uppercase;
-    }
+}
 
-.form__input::placeholder {
-    color: #aca49c;
+@media (max-width: 37.5em) {
+    .form__input {
+        border-bottom: solid 1px #b3aca7;
+        width: 100%;
+        text-align: center;
+        padding: 0.5em;
+        border-top: none;
+        border-bottom: none;
+    }
 }
 
 .form__input:hover {
@@ -339,22 +397,19 @@ body {
     color: #e2dedb;
 }
 
-.form__input:hover::placeholder {
-    color: #e2dedb;
-}
-
 .form__textarea {
     resize: none;
-    height: 5em;
+    height: 7em;
 }
 
 .form__submit {
     border: solid 1px #b3aca7;
     font-size: 1em;
-    padding: 10px;
+    padding: 0.625em;
     color: #214f9b;
     background: transparent;
     cursor: pointer;
+    width: 100%;
 }
 
 .form__submit:hover {

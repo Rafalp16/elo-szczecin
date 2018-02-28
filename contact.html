@@ -18,7 +18,9 @@
                         <img src="images/logo.png" alt="" class="site-header__logo">
                     </a>
                     <div class="site-header__title">
-                        <h1 class="title__item">Elo<br>Szczecin</h1>
+                        <h1 class="title__item">
+                            <a href="index.html" class="item__link">Elo<br>Szczecin</a>
+                        </h1>
                     </div>
                 </header>
                 <nav class="site-navbar">
@@ -35,10 +37,16 @@
                     <h1 class="site-contact__header">Send us a message.</h1>
                 </header>              
                 <form class="site-contact__form">
-                          <input id="name" type="text" placeholder="NAME" class="form__input">
-                          <input id="email" type="text" placeholder="E-MAIL" class="form__input">
-                          <textarea id="message" type="text" placeholder="MESSAGE" class="form__input form__textarea"></textarea>
-                  <input id="submit" type="submit" value="SEND!" class="form__submit">
+                    <label for="name" class="form__label">NAME</label>
+                    <input id="name" type="text" class="form__input">
+                    
+                    <label for="email" class="form__label">EMAIL</label>
+                    <input id="email" type="text" class="form__input">
+                    
+                    <label for="message" class="form__label">MESSAGE</label>
+                    <textarea id="message" type="text" class="form__input form__textarea"></textarea>
+                    
+                    <input id="submit" type="submit" value="SEND!" class="form__submit">
                 </form>
             </main>
             <footer class="site-footer offer-footer">
