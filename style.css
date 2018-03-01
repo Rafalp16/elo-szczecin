@@ -37,16 +37,11 @@ body {
     line-height: 0.7;
     letter-spacing: -2px;
     color: #214f9b;
-    align-self: flex-end;
-}
-
-.title__item {
-    margin: 0;
-    font-size: 1em;
     font-weight: 500;
+    margin-top: 25px;
 }
 
-.item__link {
+.title__link {
     text-decoration: none;
     color: #214f9b;
 }
